@@ -37,7 +37,7 @@ function createFibonachiNumber(n, m){
     
     return console.log(l.splice(1));
 }
-createFibonachiNumber(8, 5) //[ 13, 21, 34, 55, 89 ]
+createFibonachiNumber(8, 5) //[ 21, 34, 55, 89, 144 ]
 
 //4) даны 2 4-хзначных числа с неповторяющимися цифрами, надо определить сколько цифр в этих числах совпадают по значению и позиции и сколько только по значению (3487 и 3794 ---> 1 и 3 )
 function compareNumber(n1, n2){
