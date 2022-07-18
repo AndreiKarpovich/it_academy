@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-18T19:03:11.523Z",
+    "end": "2022-07-18T19:03:26.382Z",
+    "duration": 14859,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "015d2867-65c7-4eba-8657-94d0c0f9574a",
+      "title": "",
+      "fullFile": "E:\\kurs\\it academy\\it_academy\\lesson17\\test\\dztest.test.js",
+      "file": "\\test\\dztest.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2e84a8d0-97f7-4f50-9c50-25d5da2e2861",
+          "title": "testsChromeWebDriver",
+          "fullFile": "E:\\kurs\\it academy\\it_academy\\lesson17\\test\\dztest.test.js",
+          "file": "\\test\\dztest.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"testsChromeWebDriver\"",
+              "fullTitle": "testsChromeWebDriver \"before all\" hook in \"testsChromeWebDriver\"",
+              "timedOut": false,
+              "duration": 773,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = new Builder().forBrowser('chrome').build();\nawait driver.manage().window().maximize();",
+              "err": {},
+              "uuid": "53bafbb8-beb3-4904-b19d-217be9933e65",
+              "parentUUID": "2e84a8d0-97f7-4f50-9c50-25d5da2e2861",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"testsChromeWebDriver\"",
+              "fullTitle": "testsChromeWebDriver \"after all\" hook in \"testsChromeWebDriver\"",
+              "timedOut": false,
+              "duration": 37,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "6901645a-95c8-4b1b-83cb-3f09e16513fc",
+              "parentUUID": "2e84a8d0-97f7-4f50-9c50-25d5da2e2861",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "getTitle",
+              "fullTitle": "testsChromeWebDriver getTitle",
+              "timedOut": false,
+              "duration": 5081,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('https://chromedriver.chromium.org/home');\nawait driver.sleep(2000);\nawait driver.getTitle().then(function(title) {\n    if(title === 'ChromeDriver - WebDriver for Chrome'){\n        console.log(\"Verification Successful\");\n        }\n    else{\n        console.log(\"Verification Failed\");\n    }\n});",
+              "err": {},
+              "uuid": "fb8887c1-4cf7-4d7f-810e-b13247ce5628",
+              "parentUUID": "2e84a8d0-97f7-4f50-9c50-25d5da2e2861",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "ChromeExtensions",
+              "fullTitle": "testsChromeWebDriver ChromeExtensions",
+              "timedOut": false,
+              "duration": 4723,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const getChromeExtensions = await driver.findElement(By.xpath('//*[@class=\"PsKE7e qV4dIc Qrrb5 YSH9J\"]//*[@href=\"/extensions\"]'));\nawait driver.actions().click(getChromeExtensions).perform();\nawait driver.sleep(2000);\nawait driver.getTitle().then(function(title) {\n    if(title === 'ChromeDriver - WebDriver for Chrome - Chrome Extensions'){\n        console.log(\"Verification Successful\");\n        }\n    else{\n        console.log(\"Verification Failed\");\n    }\n});        \nconst pageName = await driver.findElement(By.xpath('//*[@id=\"h.p_ID_13\"]//*[@class=\" Rn3Z1b\"]'));\nawait driver.executeScript('arguments[0].style.backgroundColor=\"red\"', pageName);\nawait driver.sleep(2000);",
+              "err": {},
+              "uuid": "c0d341d3-1743-4212-86cd-95a670ae13f8",
+              "parentUUID": "2e84a8d0-97f7-4f50-9c50-25d5da2e2861",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "SearchField",
+              "fullTitle": "testsChromeWebDriver SearchField",
+              "timedOut": false,
+              "duration": 4236,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const search = await driver.findElement(By.css('.U26fgb.mUbCce.fKz7Od.iWs3gf.Wdnjke.M9Bg4d'));\nawait driver.actions().click(search).perform();\nawait driver.sleep(2000);\nconst searchField = await driver.findElement(By.xpath('//*[@class=\"whsOnd zHQkBf\"]'));\nawait searchField.sendKeys('driver');\nawait driver.actions().sendKeys(Key.ENTER).perform();\nawait driver.sleep(2000);\nconst firstLink = await driver.findElement(By.xpath('//*[@class=\"vH0yjd\"]//a[contains(@href,\"driver\")]'));\nconst linkText = await driver.findElement(By.xpath('//*[@class=\"vH0yjd\"]//*[@class=\"yDWqEe\"]//*[text()=\"driver\"]'));\nlet text = await new String();\ntext = driver.executeScript(firstLink).toString();\nconsole.log(text.includes('driver'));\ntext = driver.executeScript(linkText).toString();\nconsole.log(text.includes('driver'));",
+              "err": {},
+              "uuid": "10b0e9ab-ee9f-4a65-8c18-f4ba1d5ced6d",
+              "parentUUID": "2e84a8d0-97f7-4f50-9c50-25d5da2e2861",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fb8887c1-4cf7-4d7f-810e-b13247ce5628",
+            "c0d341d3-1743-4212-86cd-95a670ae13f8",
+            "10b0e9ab-ee9f-4a65-8c18-f4ba1d5ced6d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14040,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 60000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.0.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
