@@ -1,0 +1,77 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1659283595351' stop='1659283615755'>
+    <name>Functionality check on https://webdriver.io/</name>
+    <title>Functionality check on https://webdriver.io/</title>
+    <test-cases>
+        <test-case start='1659283595351' status='passed' stop='1659283599418'>
+            <name>Navigate and go to GettingStartedPage, page title should be equivalent to Getting Started | WebdriverIO</name>
+            <title>Navigate and go to GettingStartedPage, page title should be equivalent to Getting Started | WebdriverIO</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1659283599418' status='passed' stop='1659283599539'>
+            <name>Switch to dark mode, check that  dark mode is enabled </name>
+            <title>Switch to dark mode, check that  dark mode is enabled </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1659283599539' status='passed' stop='1659283606492'>
+            <name>Сheck search for word "mocha", check search results for contain</name>
+            <title>Сheck search for word "mocha", check search results for contain</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1659283606493' status='passed' stop='1659283611642'>
+            <name>Check recent search</name>
+            <title>Check recent search</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1659283611642' status='passed' stop='1659283615755'>
+            <name>Change header text color on the "Help" link</name>
+            <title>Change header text color on the "Help" link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
